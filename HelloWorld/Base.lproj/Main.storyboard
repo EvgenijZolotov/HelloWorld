@@ -12,30 +12,36 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="Cg2-YN-H64">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xlo-bJ-19q">
-                                <rect key="frame" x="20" y="44" width="374" height="472"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caY-1U-s80">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="472"/>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                    </view>
-                                </subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добрый день!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NGj-jo-sMR">
+                                <rect key="frame" x="119" y="144" width="196" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hN-1B-BTb">
+                                <rect key="frame" x="82" y="726" width="250" height="42"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
-                                    <constraint firstItem="caY-1U-s80" firstAttribute="centerX" secondItem="Xlo-bJ-19q" secondAttribute="centerX" id="UhF-0x-4HW"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="Oc3-HE-1y0"/>
                                 </constraints>
-                            </stackView>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Показать текст">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="vdH-VD-9nt"/>
+                        <color key="backgroundColor" red="1" green="0.96571219799999997" blue="0.69337923639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="Xlo-bJ-19q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PzB-cu-7f7"/>
-                            <constraint firstItem="Xlo-bJ-19q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gv6-3J-IQ4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xlo-bJ-19q" secondAttribute="bottom" constant="346" id="kmu-Sg-330"/>
-                            <constraint firstItem="Xlo-bJ-19q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="z2d-4d-ts4"/>
+                            <constraint firstItem="vdH-VD-9nt" firstAttribute="bottom" secondItem="9hN-1B-BTb" secondAttribute="bottom" constant="94" id="IxX-DX-68m"/>
+                            <constraint firstItem="NGj-jo-sMR" firstAttribute="leading" secondItem="Cg2-YN-H64" secondAttribute="leadingMargin" constant="99" id="U3A-K4-7c8"/>
+                            <constraint firstItem="vdH-VD-9nt" firstAttribute="trailing" secondItem="NGj-jo-sMR" secondAttribute="trailing" constant="99" id="o3f-eG-G0Q"/>
+                            <constraint firstItem="NGj-jo-sMR" firstAttribute="top" secondItem="vdH-VD-9nt" secondAttribute="top" constant="100" id="qoS-hU-7aw"/>
+                            <constraint firstItem="9hN-1B-BTb" firstAttribute="centerX" secondItem="Cg2-YN-H64" secondAttribute="centerX" id="z3D-oP-fyT"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -45,11 +51,11 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
